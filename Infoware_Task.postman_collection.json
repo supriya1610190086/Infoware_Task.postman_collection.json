@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "89474456-67ba-487e-af6d-c045d55cd26e",
+		"name": "Company_project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\":\"ayuh\",\n    \"Mobile_no\": 1324567876,\n    \"Email\":\"ayush@navgurukul.org\",\n    \"password\": \"ayush@1232\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/Signup"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Email\":\"ayush@navgurukul.org\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/Login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/profile_data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJzaXplXzEiOiJNIiwic2l6ZV8yIjoiTCIsInNpemVfMyI6IlhMIiwiY29sb3JfMSI6IlJlZCIsImNvbG9yXzIiOiJXaGl0ZSIsImNvbG9yXzMiOiJHcmV5IiwiY29sb3JfNCI6IkJsdWUiLCJjb2xvcl81IjoiQmxhY2siLCJjb2xvcl82IjoiQ3JlYW0iLCJjb2xvcl83IjoiR3JlZW4iLCJpYXQiOjE2NDU4NjkwNDksImV4cCI6MTY0NTg3NjI0OX0.eOo2Hz6f8kUygQECuHfmcfvPwba7G8p8sIoFS-MhaTk"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/profile_data"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/profile_data_update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJzaXplXzEiOiJNIiwic2l6ZV8yIjoiTCIsInNpemVfMyI6IlhMIiwiY29sb3JfMSI6IlJlZCIsImNvbG9yXzIiOiJXaGl0ZSIsImNvbG9yXzMiOiJHcmV5IiwiY29sb3JfNCI6IkJsdWUiLCJjb2xvcl81IjoiQmxhY2siLCJjb2xvcl82IjoiQ3JlYW0iLCJjb2xvcl83IjoiR3JlZW4iLCJpYXQiOjE2NDU4NjkwNDksImV4cCI6MTY0NTg3NjI0OX0.eOo2Hz6f8kUygQECuHfmcfvPwba7G8p8sIoFS-MhaTk"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\":\"ayu\",\n    \"Mobile_no\": 1324567876,\n    \"password\": \"ayu@1232\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/profile_data_update"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/profile_Data_Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJzaXplXzEiOiJNIiwic2l6ZV8yIjoiTCIsInNpemVfMyI6IlhMIiwiY29sb3JfMSI6IlJlZCIsImNvbG9yXzIiOiJXaGl0ZSIsImNvbG9yXzMiOiJHcmV5IiwiY29sb3JfNCI6IkJsdWUiLCJjb2xvcl81IjoiQmxhY2siLCJjb2xvcl82IjoiQ3JlYW0iLCJjb2xvcl83IjoiR3JlZW4iLCJpYXQiOjE2NDU4NDk1MTcsImV4cCI6MTY0NTg1NjcxN30.g829aOijC9uWO6T2VdbR1kliJA8dkYxpmNmXYOqVguo"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/profile_Data_Delete"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/Attribute_data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJzaXplXzEiOiJNIiwic2l6ZV8yIjoiTCIsInNpemVfMyI6IlhMIiwiY29sb3JfMSI6IlJlZCIsImNvbG9yXzIiOiJXaGl0ZSIsImNvbG9yXzMiOiJHcmV5IiwiY29sb3JfNCI6IkJsdWUiLCJjb2xvcl81IjoiQmxhY2siLCJjb2xvcl82IjoiQ3JlYW0iLCJjb2xvcl83IjoiR3JlZW4iLCJpYXQiOjE2NDU4NDk1MTcsImV4cCI6MTY0NTg1NjcxN30.g829aOijC9uWO6T2VdbR1kliJA8dkYxpmNmXYOqVguo"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"size\":\"L\",\n    \"color\":\"White\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/Attribute_data"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/Orders",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJzaXplXzEiOiJNIiwic2l6ZV8yIjoiTCIsInNpemVfMyI6IlhMIiwiY29sb3JfMSI6IlJlZCIsImNvbG9yXzIiOiJXaGl0ZSIsImNvbG9yXzMiOiJHcmV5IiwiY29sb3JfNCI6IkJsdWUiLCJjb2xvcl81IjoiQmxhY2siLCJjb2xvcl82IjoiQ3JlYW0iLCJjb2xvcl83IjoiR3JlZW4iLCJpYXQiOjE2NDU4NjkwNDksImV4cCI6MTY0NTg3NjI0OX0.eOo2Hz6f8kUygQECuHfmcfvPwba7G8p8sIoFS-MhaTk"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"product_id\":3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/Orders"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/Orders_All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/Orders_All"
+			},
+			"response": []
+		}
+	]
+}
